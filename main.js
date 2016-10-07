@@ -115,7 +115,6 @@ $(document).ready(function() {
 
   // Turn the game on/off
   function toggleOn() {
-
     if (on) {
       if (strict) {
         toggleStrict();
@@ -135,7 +134,6 @@ $(document).ready(function() {
 
   // Start a new game
   function startGame() {
-
     kill();
     game.init();
     sequence();
@@ -153,7 +151,6 @@ $(document).ready(function() {
 
   // Play the current game sequence
   function sequence() {
-
     $('.corner').each(function() {
       $(this).removeClass("clickable");
     });
@@ -176,7 +173,6 @@ $(document).ready(function() {
 
   // Play the current light in the pattern
   function play() {
-
     var index = game.pattern[game.curPattern];
     var corner = corners[index];
     var light = lights[corner];
