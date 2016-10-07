@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <title></title>
+  <meta content="">
+  <style></style>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lalezar|Orbitron:700|Oswald" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+  <div class="noselect" id="circle">
+    <div class="green corner" id="topLeft">
+    </div>
+
+    <div class="red corner" id="topRight">
+    </div>
+
+    <div class="yellow corner" id="bottomLeft">
+    </div>
+
+    <div class="blue corner" id="bottomRight">
+    </div>
+
+    <div id="center">
+      <h1>Simon&reg;</h1>
+
+      <div>
+        <div class="buttons">
+          <div>
+            <div id="counter">
+              <p id="counterText">--</p>
+            </div>
+            <p>Count</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <div class="push_button clickable" id="start">
+          </div>
+          <p>Start</p>
+        </div>
+
+        <div class="buttons">
+          <div id="strictLight">
+          </div>
+          <div class="push_button clickable" id="strict">
+          </div>
+          <p>Strict</p>
+        </div>
+
+        <div class="onSwitch">
+          <input type="checkbox" name="onSwitch" class="onSwitch-checkbox" id="onSwitch">
+          <label class="onSwitch-label" for="onSwitch">
+            <span class="onSwitch-inner"></span>
+            <span class="onSwitch-switch"></span>
+        </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="congrats hidden">You win!</h1>
+  <p class="signature">Ivan Puljak</p>
+
+
+</body>
+
+</html>
