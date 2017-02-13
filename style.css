@@ -59,16 +59,74 @@ body {
 }
 
 .onSwitch {
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  margin: 0 auto;
   position: relative;
   width: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin: 0 auto;
 }
 
 .onSwitch-checkbox {
   display: none;
+}
+
+.onSwitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 0px;
+}
+
+.onSwitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onSwitch-inner:before,
+.onSwitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 20px;
+  padding: 0;
+  line-height: 16px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.onSwitch-inner:before {
+  content: "On";
+  background-color: #2E8DEF;
+  color: #FFFFFF;
+}
+
+.onSwitch-inner:after {
+  content: "Off";
+  padding-right: 10px;
+  background-color: #CCCCCC;
+  color: #333333;
+  text-align: right;
+}
+
+.onSwitch-switch {
+  display: block;
+  width: 10px;
+  margin: 0px;
+  background: #000000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  transition: all 0.3s ease-in 0s;
 }
 
 .onSwitch-checkbox:checked + .onSwitch-label .onSwitch-inner {
@@ -76,65 +134,7 @@ body {
 }
 
 .onSwitch-checkbox:checked + .onSwitch-label .onSwitch-switch {
-  right: 0;
-}
-
-.onSwitch-inner {
-  display: block;
-  margin-left: -100%;
-  transition: margin .3s ease-in 0;
-  width: 200%;
-}
-
-.onSwitch-inner:after {
-  background-color: #CCC;
-  color: #333;
-  content: "Off";
-  padding-right: 10px;
-  text-align: right;
-}
-
-.onSwitch-inner:before {
-  background-color: #2E8DEF;
-  color: #FFF;
-  content: "On";
-}
-
-.onSwitch-inner:before,
-.onSwitch-inner:after {
-  background-clip: padding-box;
-  border: 2px solid transparent;
-  box-sizing: border-box;
-  color: #FFF;
-  display: block;
-  float: left;
-  font-family: Trebuchet, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  height: 20px;
-  line-height: 16px;
-  padding: 0;
-  width: 50%;
-}
-
-.onSwitch-label {
-  border: 2px solid #999;
-  border-radius: 0;
-  cursor: pointer;
-  display: block;
-  overflow: hidden;
-}
-
-.onSwitch-switch {
-  background: #000;
-  bottom: 0;
-  display: block;
-  margin: 0;
-  position: absolute;
-  right: 40px;
-  top: 0;
-  transition: all .3s ease-in 0;
-  width: 10px;
+  right: 0px;
 }
 
 .push_button {
