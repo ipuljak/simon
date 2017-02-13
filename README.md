@@ -10,6 +10,6 @@ To play the Simon game, clone the repo and open the index.html file in a browser
 
 You can try out the live demo [here](https://www.puljak.ca/projects/basic/simon).
 
-####About Me#####
+###About Me###
 
 For more information about me, visit my website at [puljak.ca](https://puljak.ca)!
